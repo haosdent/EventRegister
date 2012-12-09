@@ -28,21 +28,27 @@ Template.register.events({
 	var registerModal = $('#register-modal');
 	var nameDom = $('input[name="name"]', registerModal),
 	    emailDom = $('input[name="email"]', registerModal),
-	    interestDom = $('input[name="interest"]', registerModal),
+	    collegeDom = $('input[name="college"]', registerModal),
+	    gradeDom = $('input[name="grade"]', registerModal),
+	    specialtyDom = $('input[name="specialty"]', registerModal),
+	    organizeDom = $('input[name="organize"]', registerModal),
 	    adviseDom = $('textarea[name="advise"]', registerModal);
 	var user = {
 	    name: nameDom.val(),
 	    email: emailDom.val(),
-	    interest: interestDom.val(),
+	    college: collegeDom.val(),
+	    grade: gradeDom.val(),
+	    specialty: specialtyDom.val(),
+	    organize: organizeDom.val(),
 	    advise: adviseDom.val()
 	}, userId;
 
 	if(/@/.exec(user.email) === null){
-	    Session.set('register_error', '邮箱格式错误');
-	    console.log('邮箱格式错误');
+	    Session.set('register_error', '请检查您输入的邮箱格式');
+	}else if(user.name === ""){
+	    Session.set('register_error', '请输入您的姓名');
 	}else if(Users.findOne({email: user.email}) !== undefined){
-	    Session.set('register_error', '邮箱已被注册');
-	    console.log('邮箱已被注册');
+	    Session.set('register_error', '请输入的邮箱已被注册，请换另一个邮箱地址');
 	}else{
 	    Session.set('register_error', null);
 	    userId = Users.insert(user);
@@ -52,7 +58,10 @@ Template.register.events({
 
 	nameDom.val('');
 	emailDom.val('');
-	interestDom.val('');
+	collegeDom.val('');
+	gradeDom.val('');
+	specialtyDom.val('');
+	organizeDom.val('');
 	adviseDom.val('');
     }
 });
