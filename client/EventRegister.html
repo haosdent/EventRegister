@@ -1,0 +1,287 @@
+<!-- @name: EventRegister.html
+     @author: Haosdent Huang
+     @email: haosdent@gmail.com
+     @date: 2012-12-08 -->
+<head>
+  <title>HCI@SCAU</title>
+</head>
+
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+	<a class="brand" href="#intro" name="top">SCAU Web Development</a>
+	<div class="nav-collapse collapse">
+	  <ul class="nav">
+	    <li><a href="#info"><i class="icon-screenshot"></i> 活动信息</a></li>
+	    <li class="divider-vertical"></li>
+	    <li><a href="#speakers"><i class="icon-comment"></i> 讲师介绍</a></li>
+	    <li class="divider-vertical"></li>
+	    <li><a href="#schedule"><i class="icon-bullhorn"></i> 分享内容</a></li>
+	    <li class="divider-vertical"></li>
+            <li><a href="#contact"><i class="icon-info-sign"></i> 关于我们</a></li>
+	    <li class="divider-vertical"></li>
+	  </ul>
+	</div>
+	<!--/.nav-collapse -->
+      </div>
+      <!--/.container-fluid -->
+    </div>
+    <!--/.navbar-inner -->
+  </div>
+  <!--/.navbar -->
+
+  <!-- Intro -->
+  <section role="intro" class="center" id="intro">
+    <div class="container">
+      <h1 class="f90 lh15 mt100 mt90 ts-light">SCAU Web Development 2012</h1>
+      <h2 class="f50 ts-light m30">十二月 16号</h2>
+      <h2 class="f60 ts-light m50">开放，自由 及分享</h2>
+    </div>
+  </section>
+  <!-- End of Intro -->
+
+  <!-- Action bar -->
+  <section role="action" class="center" >
+    <a class="btn btn-success btn-large mh20" href="#info"><i class="icon-map-marker"></i> 查看地点</a>
+    {{> register}}
+  </section>
+  <!-- End of Action bar -->
+
+  <!-- Info -->
+  <section role="info" class="container" id="info">
+    <div class="title ts-float">
+      <h1>活动信息 <span class="success">console.log(this);</span></h1>
+    </div>
+    <div class="content">
+      <ul class="no-list">
+        <li>
+	  <h4><span class="badge badge-important">时间</span> 12月16号（星期日）晚 19:00 - 21:30</h4>
+	</li>
+        <li>
+	  <h4><span class="badge badge-warning">地点</span> 华南农业大学五山区第四教学楼</h4>
+	</li>
+        <li>
+	  <h4><span class="badge badge-info">备注</span> 禁止任何宣传推销行为；本活动免费，只需按时前来即可。</h4>
+	</li>
+        <li>
+	  <h4>
+	    <span class="badge badge-success">地图</span>
+	  </h4>
+	  <div class="ml60">
+	    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.hk/maps?hl=zh-CN&amp;brcurrent=3,0x0:0x0,0&amp;ie=UTF8&amp;t=m&amp;ll=23.153175,113.364851&amp;spn=0.003453,0.00456&amp;z=17&amp;output=embed"></iframe>
+	  </div>
+	</li>
+      </ul>
+    </div>
+  </section>
+  <!-- End of Info -->
+
+  <!-- Speakers -->
+  <section role="speakers" id="speakers" class="container">
+    <div class="title ts-float">
+      <h1>讲师介绍 <span class="info">&lt;video src="this.webm"&gt;</span></h1>
+    </div>
+    <div class="span5 well">
+      <div class="row">
+	<div class="span2"><a href="http://weibo.com/gse7en" class="thumbnail"><img src="img/speaker-zzp.jpg" alt="朱志鹏"></a></div>
+	<div class="span3">
+	  <h2>朱志鹏</h2>
+          <p>
+	    Weibo:<a href="http://weibo.com/gse7en"><strong>@Gse7en</strong></a>
+	    <br>
+	    Github:<a href="https://github.com/gse7en2012"><strong>@gse7en2012</strong></a>
+	  </p>
+          <ul>
+            <li><a href="http://game.163.com/">网易游戏</a>实习生</li>
+            <li>工程学院科技联合会成员</li>
+          </ul>
+	</div>
+      </div>
+    </div>
+    <div class="span5 well">
+      <div class="row">
+	<div class="span2"><a href="http://weibo.com/u/1839861735" class="thumbnail"><img src="img/speaker-zyy.jpg" alt="朱颖妍"></a></div>
+	<div class="span3">
+	  <h2>朱颖妍</h2>
+          <p>
+	    Weibo:<a href="http://weibo.com/u/1839861735"><strong>@仲有咩比猪重要</strong></a>
+	    <br>
+	    Github:<a href="https://github.com/scauhci/"><strong>@scauhci</strong></a>
+	  </p>
+          <ul>
+            <li><a href="http://dl.xunlei.com/">迅雷</a>实习生</li>
+            <li>HCI@SCAU成员</li>
+          </ul>
+	</div>
+      </div>
+    </div>
+    <div class="span5 well">
+      <div class="row">
+	<div class="span2"><a href="http://weibo.com/yqjun123" class="thumbnail"><img src="img/speaker-yqw.jpg" alt="严庆文"></a></div>
+	<div class="span3">
+	  <h2>严庆文</h2>
+          <p>
+	    Weibo:<a href="http://weibo.com/yqjun123"><strong>@庆文君</strong></a>
+	    <br>
+	    Github:<a href="https://github.com/xxx"><strong>@xxx</strong></a>
+	  </p>
+          <ul>
+            <li><a href="http://e.weibo.com/weixinteam">腾讯微信</a>实习生</li>
+          </ul>
+	</div>
+      </div>
+    </div>
+    <div class="span5 well">
+      <div class="row">
+	<div class="span2"><a href="http://weibo.com/haosdent" class="thumbnail"><img src="img/speaker-hhs.jpg" alt="黄浩松"></a></div>
+	<div class="span3">
+	  <h2>黄浩松</h2>
+          <p>
+	    Weibo:<a href="http://weibo.com/haosdent"><strong>@华农金中菊</strong></a>
+	    <br>
+	    Bitbucket:<a href="https://bitbucket.org/haosdent"><strong>@haosdent</strong></a>
+	  </p>
+          <ul>
+            <li><a href="http://e.weibo.com/emclabschina">EMC中国研究院</a>实习生</li>
+            <li>HCI@SCAU成员</li>
+          </ul>
+	</div>
+      </div>
+    </div>
+    <div class="span5 well">
+      <div class="row">
+	<div class="span2"><a href="http://weibo.com/cjiang1990" class="thumbnail"><img src="img/speaker-lcj.jpg" alt="刘春江"></a></div>
+	<div class="span3">
+	  <h2>刘春江</h2>
+          <p>
+	    Weibo:<a href="http://weibo.com/cjiang1990"><strong>@华山吖江</strong></a>
+	    <br>
+	    Github:<a href="https://github.com/scauhci/"><strong>@scauhci</strong></a>
+	  </p>
+          <ul>
+            <li><a href="http://www.baitianinfo.com/">百田</a>实习生</li>
+            <li>HCI@SCAU成员</li>
+          </ul>
+	</div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Speakers -->
+
+  <!-- Schedule -->
+  <section role="schedule" id="schedule" class="container">
+    <div class="title ts-float">
+      <h1>分享内容 <span class="warning">socket.broadcast.emit('Web Development...')</span></h1>
+    </div>
+    <div class="well">
+      <table class="table">
+	<thead>
+          <tr>
+            <th>讲师</th>
+            <th>分享主题</th>
+          </tr>
+	</thead>
+	<tbody>
+          <tr>
+            <td>朱志鹏</td>
+            <td>Node.js与全新的web开发</td>
+          </tr>
+          <tr>
+            <td>朱颖妍</td>
+            <td>我们仍未知道那天所讲的叫js</td>
+          </tr>
+          <tr>
+            <td>严庆文</td>
+            <td>中二病也要学页面重构</td>
+          </tr>
+          <tr>
+            <td>黄浩松</td>
+            <td>Node.js-前端吊丝的逆袭</td>
+          </tr>
+          <tr>
+            <td>刘春江</td>
+            <td>Node.js与全新的web开发</td>
+          </tr>
+	</tbody>
+      </table>
+    </div>
+  </section>
+  <!-- End of Schedule -->
+
+  <!-- Contact -->
+  <section role="contact" id="contact" class="container">
+    <div class="title ts-float">
+      <h1>关于我们 <span class="error">new Worker('工程学院科技联合会') && new SharedWorker('HCI@SCAU')</span></h1>
+    </div>
+    <div>
+      <div class="span7">
+	<h2>发起者</h2>
+	<div class="span3 center">
+	  <h3 class="text-warning center">工程学院科技联合会</h3>
+	  <a href="http://weibo.com/scaustu" class="thumbnail"><img src="img/contact-stu.jpg" alt="工程学院科技联合会"></a>
+	</div>
+	<div class="span3 center">
+	  <h3 class="text-success center">HCI@SCAU</h3>
+	  <a href="mailto:haosdent@gmail.com" class="thumbnail"><img src="img/contact-hci.jpg" alt="HCI@SCAU"></a>
+	</div>
+      </div>
+      <div class="span3">
+	<h2>特别感谢</h2>
+	<div class="span3 center">
+	  <h3 class="text-error">HTML5梦工场</h3>
+	  <a href="http://weibo.com/gse7en" class="thumbnail"><img src="img/contact-html5.jpg" alt="HTML5梦工场"></a>
+	</div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Contact -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="pull-right"><a href="#intro">返回顶部</a></p>
+      <p>由 <a href="http://weibo.com/haosdent">@华农金中菊</a> 倾注对师弟师妹们的殷切希望写成，老了，已经不能再爱了，华农的未来靠你们了。</p>
+      <p>代码发布于 <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a> 许可协议下。</p>
+      <ul class="no-list">
+        <li>Powered by <a href="mailto:haosdent@gmail.com">HCI@SCAU</a></li>
+        <li class="muted">&&</li>
+        <li><a href="http://weibo.com/scaustu">工程学院科技联合会</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- End of Footer -->
+</body>
+
+<template name="register">
+  {{#if successed}}
+  <a class="btn btn-warning btn-large mh20 disabled" href="#register-modal" data-toggle="modal"><i class="icon-hand-up"></i> 您已成功报名</a>
+  {{else}}
+  <a class="btn btn-warning btn-large mh20" href="#register-modal" data-toggle="modal"><i class="icon-hand-up"></i> 在线报名</a>
+  {{/if}}
+  <!-- register-modal -->
+  {{#if status "start"}}
+  <div id="register-modal" class="modal hide fade in" tabindex="-1" role="dialog" aria-hidden="false" style="display: block;">
+  {{else}}
+  <div id="register-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+  {{/if}}
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h3>注册报名</h3>
+    </div>
+    <div class="modal-body ph0">
+      {{#if error}}
+      <div class="alert alert-error">
+        {{error}}
+      </div>
+      {{/if}}
+      <input class="span4" placeholder="请输入您的姓名" type="text" name="name">
+      <input class="span4" placeholder="请输入您的邮箱" type="email" name="email">
+      <input class="span4" placeholder="请输入您关注的领域" type="text" name="interest">
+      <textarea class="span4" placeholder="您有什么想对我们说的吗？" rows="3" name="advise"></textarea>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary ex-submit" >提交</button>
+    </div>
+  </div><!-- ./register-modal-->
+</template>
